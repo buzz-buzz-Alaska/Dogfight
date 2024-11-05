@@ -1,4 +1,4 @@
-package com.lothrazar.examplemod;
+package com.buzzbuzz.dogfight;
 
 import com.lothrazar.library.config.ConfigTemplate;
 import net.minecraftforge.common.ForgeConfigSpec;

@@ -53,23 +53,23 @@ cd "../${github}"
 touch "src/main/resources/assets/${modid}/lang/en_us.json"
 echo "{ }" >> "src/main/resources/assets/${modid}/lang/en_us.json"
 
-mv src/main/java/com/lothrazar/examplemod "src/main/java/com/lothrazar/${modid}"
-sed -i "s/examplemod/${modid}/g" "src/main/java/com/lothrazar/${modid}/ModMain.java"
-sed -i "s/examplemod/${modid}/g" "src/main/java/com/lothrazar/${modid}/ModRegistry.java"
-sed -i "s/examplemod/${modid}/g" "src/main/java/com/lothrazar/${modid}/ConfigManager.java"
+mv src/main/java/com/lothrazar/dogfight "src/main/java/com/lothrazar/${modid}"
+sed -i "s/dogfight/${modid}/g" "src/main/java/com/lothrazar/${modid}/ModMain.java"
+sed -i "s/dogfight/${modid}/g" "src/main/java/com/lothrazar/${modid}/ModRegistry.java"
+sed -i "s/dogfight/${modid}/g" "src/main/java/com/lothrazar/${modid}/ConfigManager.java"
 
-sed -i "s/examplemod/${modid}/g" build.gradle
-sed -i "s/examplemod/${modid}/g" gradle.properties
-sed -i "s/examplemod/${modid}/g" src/main/resources/pack.mcmeta
-sed -i "s/examplemod/${modid}/g" src/main/resources/META-INF/mods.toml
+sed -i "s/dogfight/${modid}/g" build.gradle
+sed -i "s/dogfight/${modid}/g" gradle.properties
+sed -i "s/dogfight/${modid}/g" src/main/resources/pack.mcmeta
+sed -i "s/dogfight/${modid}/g" src/main/resources/META-INF/mods.toml
 
 sed -i "s/ForgeTemplate/${github}/g" src/main/resources/META-INF/mods.toml
 sed -i "s/ForgeTemplate/${github}/g" .github/README.md
 
-sed -i "s/_curseslug_/${curseslug}/g" src/main/resources/META-INF/mods.toml
-sed -i "s/_curseslug_/${curseslug}/g" update.json
-sed -i "s/_curseslug_/${curseslug}/g" gradle.properties
-sed -i "s/_curseslug_/${curseslug}/g" .github/README.md
+sed -i "s/dogfight/${curseslug}/g" src/main/resources/META-INF/mods.toml
+sed -i "s/dogfight/${curseslug}/g" update.json
+sed -i "s/dogfight/${curseslug}/g" gradle.properties
+sed -i "s/dogfight/${curseslug}/g" .github/README.md
 
 git init
 git checkout -b trunk/1.20

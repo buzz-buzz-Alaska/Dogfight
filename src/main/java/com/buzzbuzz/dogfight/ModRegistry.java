@@ -1,4 +1,4 @@
-package com.lothrazar.examplemod;
+package com.buzzbuzz.dogfight;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
